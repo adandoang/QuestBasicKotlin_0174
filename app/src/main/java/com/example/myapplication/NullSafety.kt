@@ -15,5 +15,11 @@ fun nullSafety() {
     println(neverNull.length)
     println(nullable?.length)
 
+    fun strLength(notNull: String): Int {
+        return notNull.length
+    }
 
+    println(strLength((neverNull)))
 }
+
+
